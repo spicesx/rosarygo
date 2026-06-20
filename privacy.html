@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - RosaryGo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container privacy-container">
+        <a href="index.html" class="back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+        </a>
+
+        <h1>Privacy Policy</h1>
+
+        <div class="privacy-content" id="privacy-content">
+            <p>Loading Privacy Policy...</p>
+        </div>
+    </div>
+
+    <script src="marked.min.js"></script>
+    <script>
+        fetch('privacy.md')
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById('privacy-content').innerHTML = marked.parse(text);
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById('privacy-content').innerHTML = '<p>Error loading Privacy Policy. If you are viewing this file locally (using file://), your browser is blocking the request due to CORS. Try running a local server or viewing it on GitHub Pages!</p>';
+            });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
