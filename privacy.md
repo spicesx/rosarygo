@@ -63,8 +63,6 @@ RosaryGo is not specifically directed to children under the age required by appl
 
 ## Contact
 
-Data Controller:
-
 Michel Sfeir
 
 Email: spicesx1@gmail.com
