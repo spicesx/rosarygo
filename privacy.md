@@ -1,4 +1,4 @@
-Effective Date: 15 June 2026
+Effective Date: 26 June 2026
 
 RosaryGo is a prayer application provided by Michel Sfeir ("we", "us", or "our").
 
@@ -59,7 +59,7 @@ Because we do not maintain user accounts and do not directly store personal info
 
 ## Children's Privacy
 
-RosaryGo is not specifically directed to children under the age required by applicable law. We do not knowingly collect personal information from children.
+RosaryGo is not specifically directed to children under the age required by applicable law. We do not collect personal information from children.
 
 ## Contact
 
