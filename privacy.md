@@ -50,11 +50,9 @@ If you enable **Sync with iCloud**, RosaryGo may store and synchronize the follo
 - Tutorial completion and progress markers; and
 - Read and deleted notification identifiers.
 
-This information may reveal or relate to religious practices or preferences and is therefore treated as sensitive information.
-
 RosaryGo uses this information only to provide backup, restoration, synchronization, personalization, and continuity across your devices. It is not used for advertising, behavioral analysis, or tracking.
 
-The synchronized record is stored in your private iCloud database through Apple’s CloudKit service. It is not stored on servers operated by RosaryGo. Apple processes iCloud and CloudKit information according to [Apple’s Privacy Policy](https://www.apple.com/legal/privacy/).
+The synchronized record is stored in the private CloudKit database associated with your Apple Account. By default, only you can access that private database, its contents count toward your iCloud storage quota, and its records are not visible to us through Apple’s developer portal. It is not stored on servers operated by RosaryGo. Apple processes iCloud and CloudKit information according to [Apple’s Privacy Policy](https://www.apple.com/legal/privacy/).
 
 RosaryGo may use silent notifications delivered by Apple to learn that your private CloudKit data changed and should be synchronized. These notifications do not contain your RosaryGo backup data, do not display an alert, and are not sent through a RosaryGo-operated server.
 
@@ -93,7 +91,7 @@ RosaryGo uses RevenueCat to:
 
 The RevenueCat SDK may create an anonymous App User ID and process limited technical and transaction information, such as device type, operating system, last-seen time, App Store receipt or transaction information, product identifiers, purchase history, subscription status, and entitlement status.
 
-RosaryGo does not provide RevenueCat with your name, email address, contact information, advertising identifier, religious activity, streak history, themes, reminders, or iCloud backup contents. RosaryGo does not assign RevenueCat an account identifier connected to your real-world identity.
+RosaryGo does not provide RevenueCat with your name, email address, contact information, advertising identifier, prayer or streak activity, themes, reminders, or iCloud backup contents. RosaryGo does not assign RevenueCat an account identifier connected to your real-world identity.
 
 RevenueCat processes this information on our behalf to provide purchase-management services. RevenueCat may store and process information outside your country, including in the United States. For more information, see [RevenueCat’s Privacy Policy](https://www.revenuecat.com/privacy).
 
