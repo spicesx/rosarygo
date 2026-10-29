@@ -31,15 +31,73 @@
 }
 
 
+/* Plus Jakarta Sans (SIL OFL 1.1, fonts/OFL-PlusJakartaSans.txt) matches the app's wordmark. */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./fonts/plus-jakarta-sans-latin-ext-600-normal.woff2') format('woff2');
+    unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./fonts/plus-jakarta-sans-latin-600-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./fonts/plus-jakarta-sans-latin-ext-700-normal.woff2') format('woff2');
+    unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./fonts/plus-jakarta-sans-latin-700-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('./fonts/plus-jakarta-sans-latin-ext-800-normal.woff2') format('woff2');
+    unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('./fonts/plus-jakarta-sans-latin-800-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+
 :root {
-    --bg-gradient-start: #0f172a;
-    --bg-gradient-end: #231a4b;
+    --bg-gradient-start: #130D29;
+    --bg-gradient-end: #182848;
+    /* Text colors keep at least 7:1 (WCAG AAA) on the card, even over the gold glow. */
     --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --accent: #6366f1;
-    --accent-hover: #818cf8;
+    --text-secondary: #cbd5e1;
+    --text-body: #e2e8f0;
+    --glass-bg: rgba(19, 13, 41, 0.72);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --accent: #c7d2fe;
+    --accent-hover: #e0e7ff;
 }
 
 * {
@@ -50,8 +108,10 @@
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
     overflow-x: hidden;
+    /* Safari tints its status bar, toolbar and overscroll from the page background. */
+    background-color: var(--bg-gradient-end);
 }
 
 body {
@@ -63,6 +123,7 @@ body {
     justify-content: center;
     overflow-x: hidden;
     position: relative;
+    padding: max(1.5rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1.5rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
 }
 
 body::before {
@@ -71,8 +132,9 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #100b2b, #648de1);
+    height: 100vh;
+    height: 100lvh;
+    background: linear-gradient(to bottom, var(--bg-gradient-start), var(--bg-gradient-end));
     z-index: -2;
     pointer-events: none;
 }
@@ -100,7 +162,7 @@ body::before {
     border-radius: 24px;
     padding: 3rem;
     max-width: 500px;
-    width: 90%;
+    width: 100%;
     text-align: center;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -138,11 +200,17 @@ body::before {
 
 
 
+h1,
+h2,
+h3 {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+}
+
 h1 {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
-    background: linear-gradient(to right, #fff, #a5b4fc);
+    background: linear-gradient(to right, #fff, var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -192,7 +260,13 @@ footer a {
 }
 
 footer a:hover {
-    opacity: 0.8;
+    opacity: 0.85;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
 }
 
 .privacy-container {
@@ -201,25 +275,28 @@ footer a:hover {
     padding: 3rem 4rem;
 }
 
-.privacy-container h1 {
-    font-size: 2rem;
+.privacy-header {
     margin-bottom: 1.5rem;
-    text-align: center;
+}
+
+.privacy-content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .privacy-content {
-    color: #cbd5e1;
+    color: var(--text-body);
     line-height: 1.7;
-    font-size: 0.95rem;
-    max-height: 60vh;
-    overflow-y: auto;
-    padding-right: 1rem;
+    font-size: 1rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
-.privacy-content h2 {
+.privacy-content h2,
+.privacy-content h3 {
     color: var(--text-primary);
+    line-height: 1.3;
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 1.25rem;
@@ -238,8 +315,12 @@ footer a:hover {
     margin-bottom: 0.5rem;
 }
 
+.privacy-content h3 {
+    font-size: 1.05rem;
+}
+
 .privacy-content a {
-    color: white;
+    color: var(--accent);
     text-decoration: underline;
     transition: opacity 0.2s ease;
 }
@@ -251,21 +332,28 @@ footer a:hover {
 .back-link {
     display: inline-flex;
     align-items: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    padding: 0.5rem 1rem 0.5rem 0.75rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
-    margin-bottom: 2rem;
-    transition: color 0.2s ease;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .back-link:hover {
     color: var(--accent-hover);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .back-link svg {
-    margin-right: 0.5rem;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
 
 ::-webkit-scrollbar {
@@ -292,6 +380,10 @@ footer a:hover {
     }
 
     .privacy-container {
-        padding: 2rem;
+        padding: 1.5rem;
+    }
+
+    .privacy-content h1 {
+        font-size: 1.6rem;
     }
 }
