@@ -1,10 +1,10 @@
 # Privacy Policy for RosaryGo
 
-**Effective Date: 17 August 2026**
+**Effective Date: 30 October 2026**
 
 RosaryGo is a prayer application provided by Michel Sfeir (“RosaryGo,” “we,” “us,” or “our”).
 
-This Privacy Policy explains how information is handled when you use the RosaryGo application (the “App”).
+This Privacy Policy explains how information is handled when you use the RosaryGo application (the “App”) on iPhone, iPad and Apple Watch, and on Android. The section **RosaryGo for Android** explains what is different on Android devices.
 
 ## Privacy Summary
 
@@ -14,7 +14,7 @@ RosaryGo does not contain advertising, does not use advertising identifiers, doe
 
 Most RosaryGo information is stored locally on your device. If you choose to enable **Sync with iCloud**, selected app data is also stored in your private iCloud database so that it can be backed up and synchronized across your Apple devices.
 
-RosaryGo also uses RevenueCat to manage App Store purchases and subscriptions.
+RosaryGo also uses RevenueCat to manage App Store and Google Play purchases and subscriptions.
 
 ## Information Stored on Your Device
 
@@ -95,6 +95,38 @@ RosaryGo does not provide RevenueCat with your name, email address, contact info
 
 RevenueCat processes this information on our behalf to provide purchase-management services. RevenueCat may store and process information outside your country, including in the United States. For more information, see [RevenueCat’s Privacy Policy](https://www.revenuecat.com/privacy).
 
+## RosaryGo for Android
+
+The Android version of RosaryGo works like the Apple version described above, with these differences. Everything not mentioned here (no account, no advertising, no tracking, no analytics, locally stored information) applies in the same way.
+
+### No iCloud on Android
+
+The Android App does not use iCloud or CloudKit, and it has no iCloud setting. Your Android data is not synchronized with your Apple devices.
+
+### Google Backup
+
+Android can include app data in your device's backup to your Google Account (for example, **Backup by Google One**). RosaryGo takes part in this backup with a limited set of data: its settings store, which contains your preferences, languages and rite, reminder and streak-protection settings, themes, streak count and recent completion dates, calendar days with recorded activity, and tutorial progress. Purchase caches, notification scheduling records and the backup choice itself are not included.
+
+- The backup lets Android restore your RosaryGo data when you reinstall the App or set up a new Android device. After a restore, RosaryGo starts again at the beginning of the rosary; your place in the rosary is not carried over.
+- The backup is created, stored and encrypted by Google as part of your device backup. It is associated with your Google Account, it is not stored on servers operated by RosaryGo, and we cannot access it. Google processes it according to the [Google Privacy Policy](https://policies.google.com/privacy).
+- You can turn off **Back Up to Google** in RosaryGo's **Settings → Backup & Data**. RosaryGo then removes its data from the next backup. You can also turn device backup off entirely in your Android system settings, where you can also manage or delete existing backups.
+
+### Reminders on Android
+
+Reminders are scheduled locally with Android's alarm service and shown as local notifications. On Android 13 and later, RosaryGo asks for Android's notification permission. RosaryGo can also ask you to allow **Alarms & reminders** so that reminders arrive at the exact minute; without it, Android may deliver them a few minutes late. Reminder contents and delivery are never sent to us. A reminder that comes due while RosaryGo is open on screen is not shown.
+
+### Google Play Purchases and RevenueCat
+
+On Android, optional one-time support purchases and subscriptions are made through Google Play Billing. Google processes the payment; RosaryGo does not receive or store your payment details or Google Account credentials. RevenueCat performs the same purchase-management functions described above using Google Play purchase information (such as purchase tokens, order identifiers, product identifiers and subscription status) instead of App Store receipts. Subscriptions are managed and canceled in Google Play. Google processes purchase information according to the [Google Privacy Policy](https://policies.google.com/privacy).
+
+### Ratings, Widget and Quick Settings
+
+When RosaryGo asks for a rating, it uses Google Play's In-App Review feature; your review is handled by Google Play and is not visible to RosaryGo as personal data. The home-screen widget and the Quick Settings tile read RosaryGo's local data on your device only.
+
+### Legal Basis on Android
+
+Where data-protection laws apply, Google backup of RosaryGo data relies on your choice to use Android device backup and to keep **Back Up to Google** turned on (consent), which you can withdraw at any time as described above.
+
 ## Contacting Us
 
 If you contact us by email, we receive the email address, name, message, and any other information you choose to provide.
@@ -103,7 +135,7 @@ We use this information only to respond to your request, provide support, protec
 
 ## External Links
 
-RosaryGo contains links that may open external services, including the App Store, Apple legal pages, Instagram, email, and this Privacy Policy. Once you leave RosaryGo, the external service’s own privacy policy applies.
+RosaryGo contains links that may open external services, including the App Store, Google Play, Apple legal pages, Android system settings, Instagram, email, and this Privacy Policy. Once you leave RosaryGo, the external service’s own privacy policy applies.
 
 The public webpage on which this policy is published is hosted using GitHub Pages. GitHub may process standard technical information associated with a webpage request under the [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
